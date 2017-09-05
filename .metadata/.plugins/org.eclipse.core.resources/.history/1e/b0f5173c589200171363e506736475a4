@@ -68,10 +68,10 @@ public class Application {
 			}
 		}
 		
-		
 		System.out.println("Total passenger aircrafts capacity " + sumCapacity + " passengers.");
 		System.out.println("Total freight aircrafts capacity " + sumFreight + " tons.");
-		System.out.println("-----------------------------------------------------------------------------------------------------------");
+		System.out.println(
+				"-----------------------------------------------------------------------------------------------------------");
 
 		//////////////////////////////////////////////////////////////////////////////
 		System.out.println("Sorted by flying range:");
