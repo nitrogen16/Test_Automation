@@ -1,1 +1,1 @@
-Bucket price is 61; and its size is 3
+Bucket price is 61 and its size is 3

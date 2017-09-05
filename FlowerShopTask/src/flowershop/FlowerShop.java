@@ -17,9 +17,6 @@ public class FlowerShop {
 	public static void main(String[] args) {
 
 		FlowerProvider flowerProvider = new TxtFlowerProvider();
-		// FlowerProvider flowerProvider = new DbFlowerProvider();
-		// FlowerProvider flowerProvider = new XmlFlowerProvider();
-		// FlowerProvider flowerProvider = new HCFlowerProvider();
 
 		Flower rose = flowerProvider.getFlowerByName(Rose.ROSE_FLOWER_NAME);
 		Flower tulip = flowerProvider.getFlowerByName(Tulip.TULIP_FLOWER_NAME);
@@ -33,24 +30,19 @@ public class FlowerShop {
 			b1.addFlower(tulip);
 			b1.addFlower(decorative);
 			b1.addFlower(lilac);
-
-			// Exception to handle case when no slots available in the bucket
-
+		// Exception to handle case when no slots available in the bucket
 		} catch (NoMoreSlotsException e) {
 			System.out.println("Cannot include that flower: " + e.getMessage());
 		}
 
 		// Exception to handle case when trying to remove not existing Flower
-
 		try {
 			b1.removeFlower(tulip);
 		} catch (NoSuchFlowerException e) {
 			System.out.println("Cannot delete that flower:  " + e.getMessage());
 		}
 
-		// Exception to handle case when trying to remove not existing Flower by its
-		// number
-
+		// Exception to handle case when trying to remove not existing Flower by its number
 		try {
 			b1.removeFlowerByIndex("0");
 		} catch (WrongFlowerIndexException e) {

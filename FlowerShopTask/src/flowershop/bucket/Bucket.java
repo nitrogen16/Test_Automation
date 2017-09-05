@@ -39,15 +39,11 @@ public class Bucket {
     }
 
     public int calcPrice() {
-        int sum = 0;
-        for (Flower fl : intBucket) {
-            sum += fl.getFlowerPrice();
-        }
+        int sum = intBucket.stream().mapToInt(item -> item.getFlowerPrice()).sum();
         return sum;
     }
 
     public int getBucketSize(){
         return this.bucketSize;
     }
-
 }
