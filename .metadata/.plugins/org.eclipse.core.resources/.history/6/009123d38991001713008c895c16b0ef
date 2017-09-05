@@ -1,0 +1,8 @@
+package task1_object_model.cars;
+
+public enum Brand {
+	OPEL, 
+	TOYOTA, 
+	HONDA, 
+	CITROEN;
+}

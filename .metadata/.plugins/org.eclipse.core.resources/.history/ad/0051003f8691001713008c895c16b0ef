@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Calc{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("¬ведите первое число:");
+		int num1 = sc.nextInt();
+		System.out.println("¬ведите знак операции:");
+		String oper = sc.next();
+		System.out.println("¬ведите второе число:");
+		int num2 = sc.nextInt();
+		sc.close();
+		System.out.println("–езультат вычислений:" + CalcLogic.logicmethod(num1, oper, num2));
+	}
+}

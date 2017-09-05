@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="task1_object_model.cars.Car"/>
+<fullyQualifiedTypeName name="task1_object_model.cars.Brand"/>
+<fullyQualifiedTypeName name="task1_object_model.planes.Airliner"/>
+<fullyQualifiedTypeName name="task1_object_model.planes.FreightAircraft"/>
+<fullyQualifiedTypeName name="task1_object_model.planes.Plane"/>
+<fullyQualifiedTypeName name="task1_object_model.planes.AirlineCompany"/>
+</qualifiedTypeNameHistroy>

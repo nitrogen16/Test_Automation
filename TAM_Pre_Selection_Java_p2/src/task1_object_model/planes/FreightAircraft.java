@@ -1,0 +1,32 @@
+package task1_object_model.planes;
+
+public class FreightAircraft extends Plane{
+	
+	private double planeFreight;
+
+	public double getPlaneFreight() {
+		return planeFreight;
+	}
+
+	public void setPlaneFreight(double planeFreight) {
+		this.planeFreight = planeFreight;
+	}
+
+	public FreightAircraft(String planeName, int freightAircraftFlyingRange) {
+		super(planeName, freightAircraftFlyingRange);
+	}
+
+	public FreightAircraft(String planeName, int freightAircraftFlyingRange, double planeFreight) {
+		super(planeName, freightAircraftFlyingRange);
+		this.planeFreight = planeFreight;
+	}
+
+	@Override
+	public String toString() {
+		return "Freight aircraft: " + getPlaneName()
+				+ ". Flying range: " + getFreightAircraftFlyingRange() + "km"
+				+ ". Aircraft freight: " + getPlaneFreight() + " tons.";
+	}
+	
+	
+}
