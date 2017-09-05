@@ -2,7 +2,12 @@ package flowershop.bucket;
 
 public class WrongFlowerIndexException extends Exception {
 
-    public static final String WRONG_FLOWER_INDEX_MSG="NO SLOTS AVAILABLE";
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	public static final String WRONG_FLOWER_INDEX_MSG="NO SLOTS AVAILABLE";
 
     public WrongFlowerIndexException() {
         super(WRONG_FLOWER_INDEX_MSG);

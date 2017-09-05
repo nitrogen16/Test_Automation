@@ -2,7 +2,12 @@ package flowershop.bucket;
 
 public class NoSuchFlowerException extends Exception {
 
-    public static final String NO_SUCH_FLOWER_MSG="NO SUCH FLOWER";
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	public static final String NO_SUCH_FLOWER_MSG="NO SUCH FLOWER";
 
     public NoSuchFlowerException() {
         super(NO_SUCH_FLOWER_MSG);
