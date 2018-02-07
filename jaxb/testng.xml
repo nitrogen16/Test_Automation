@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Book test">
+    <test verbose="1" name="Book Test" annotations="JDK">
+        <classes>
+            <class name="BookTest" />
+        </classes>
+    </test>
+</suite>
